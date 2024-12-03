@@ -1,0 +1,315 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --color-primary: #6f6af8;
+  --color-white: #fff;
+  --color-gray-100: hsl(220,20%, 10%,5%);
+  --color-gray-200: hsl(220,20%, 10%,10%);
+  --color-gray-300: hsl(220,20%, 10%,25%);
+  --color-gray-500: hsl(220,20%, 10%,50%);
+  --color-gray-700: #252542;
+  --color-gray-900: #0c0c22;
+
+
+  --color-bg: hwb(240 95% 0%);
+
+  --transition: all 300ms ease;
+   
+  --container-width-lg: 84%;
+  --container-width-md: 92%;
+  --form-width: 50%;
+
+  --raduis-1: 0.3rem;
+  --raduis-2: 0.6rem;
+  --raduis-3: 1rem;
+  --raduis-4: 2rem;
+
+
+}
+
+html, body {
+  height: 100%;
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+  /* position: relative; */
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Container for the form */
+.dontainer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Styling the form */
+.blog-form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Title of the form */
+.blog-form h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Input field for the title */
+.blog-form input,
+.blog-form textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+/* Textarea specific styling */
+.blog-form textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+/* Button styling */
+.blog-form button {
+  background-color: #1956d8;
+  color: white;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: center;
+}
+
+.blog-form button:hover {
+  background-color: #0056b3;
+}
+
+
+/* Search Bar */
+.search-bar {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar input {
+  padding: 10px;
+  width: 300px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+
+
+.btn_search:hover {
+  background-color: #2980b9;
+}
+h1, h2 {
+  color: #222;
+}
+
+
+
+/***********Footer**********/
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background:var(--color-gray-900);
+  color: #fff;
+  text-align: center;
+  padding: 15px ;
+}
+
+.footer__categories {
+ list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.footer__categories li a {
+  background: var(--color-gray-700);
+  color:var(--color-white);
+  text-decoration: none;
+  transition: var(--transition);
+  padding: 0.6rem 1.4rem;
+  border-radius: var(--raduis-2);
+}
+
+.footer__categories li a:hover {
+  background: var(--color-white);
+  color: var(--color-gray-900);
+}
+
+.footer__copyright small {
+  display: block;
+  font-size: 0.9rem;
+  text-align: center;
+  border-top: 1px solid var(--color-gray-700);
+  padding: 0.5rem;
+  color: var(--color-white);
+  font-weight: 300;
+}
+
+/* blog-list styles */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.blog-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Blog Card Styles */
+.blog-card {
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  word-wrap: break-word; /* Break long words */
+  overflow-wrap: break-word; /* Alternative property for modern browsers */
+}
+
+.post-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.read-more-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.read-more-link:hover {
+  text-decoration: underline;
+}
+
+/* Adjust the delete button */
+.btn.delete {
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.btn.delete:hover {
+  background-color: darkred;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+h2 a {
+  color: #333;
+}
+
+h2 a:hover {
+  color: #007BFF;
+}
+
+/* Search bar and button styles */
+.search-bar {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-bar input {
+  width: 70%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.search-bar button {
+  padding: 8px 15px;
+  border: none;
+  background-color: #007BFF;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.search-bar button:hover {
+  background-color: #0056b3;
+}
+
+
+.search-input {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #007BFF;
+}
+
+.search-bar .btn {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-bar .btn:hover {
+  background-color: #0056b3;
+}
+
